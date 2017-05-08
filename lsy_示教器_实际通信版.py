@@ -47,10 +47,10 @@ B_s1 = Button(root, text="0.1mm", command=lambda :increment.set("0.1"))
 B_s2 = Button(root, text="1mm", command=lambda :increment.set("1"))
 B_s3 = Button(root, text="10mm", command=lambda :increment.set("10"))
 
-B_forward=Button(root, text="forward", command=lambda :s.move(E_coordinate_current_var,"Y","-",increment.get()))
-B_backward=Button(root, text="backward", command=lambda :s.move(E_coordinate_current_var,"Y","+",increment.get()))
-B_left=Button(root, text="left", command=lambda :s.move(E_coordinate_current_var,"X","-",increment.get()))
-B_right=Button(root, text="right", command=lambda :s.move(E_coordinate_current_var,"X","+",increment.get()))
+B_forward=Button(root, text="forward", command=lambda :s.move(E_coordinate_current_var,"X","-",increment.get()))
+B_backward=Button(root, text="backward", command=lambda :s.move(E_coordinate_current_var,"X","+",increment.get()))
+B_left=Button(root, text="left", command=lambda :s.move(E_coordinate_current_var,"Y","-",increment.get()))
+B_right=Button(root, text="right", command=lambda :s.move(E_coordinate_current_var,"Y","+",increment.get()))
 
 
 B_home=Button(root, text="home", command=lambda :s.home(E_coordinate_current_var))
